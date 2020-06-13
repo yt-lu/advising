@@ -11,7 +11,6 @@
 
 <meta name="author" content="Yuanting Lu" />
 
-<meta name="date" content="2020-06-12" />
 
 <title>Summer Advising Worksheet</title>
 
@@ -365,13 +364,12 @@ summary {
 
 <h1 class="title toc-ignore">Summer Advising Worksheet</h1>
 <h4 class="author">Yuanting Lu</h4>
-<h4 class="date">June 12, 2020</h4>
+<h4 class="date">June, 2020</h4>
 
 </div>
 
 
-<div id="welcome-to-the-summer-advising" class="section level2">
-<h2>Welcome to the summer advising</h2>
+<p>Welcome to the summer advising!</p>
 <ul>
 <li>Go to <a href="https://my.mercer.edu" target="_blank">my.mercer.edu</a>.</li>
 <li>Login your student account.</li>
@@ -381,18 +379,62 @@ summary {
 <li>Time schedule for all your classes. (Choose <strong><font style="color:red">Week 3</font></strong> for a complete preview because no class is currently scheduled for Mondays on Week 1 and Week 2.)</li>
 </ol></li>
 </ul>
-</div>
 <div id="section" class="section level2 tabset unnumbered">
 <h2></h2>
 <div id="searching-for-classes" class="section level3">
 <h3>Searching for classes</h3>
-<p>The following web page is the real time class meeting schedule at Mercer University. It is available at <a href="https://adminapps.mercer.edu/classroomsched/default.aspx?C=M" target="_blank">https://adminapps.mercer.edu/classroomsched/default.aspx?C=M</a></p>
-<iframe src="https://adminapps.mercer.edu/classroomsched/default.aspx?C=M" width="100%" height="600px">
-</iframe>
+<style>
+* {
+  font-family: Avenir;
+}
+</style>
+<p>This panel displays the real time class meeting schedule at Mercer University. Please be patient, it takes a while for this panel to show up and update. Bookmark the original link <code>https://adminapps.mercer.edu/classroomsched/default.aspx?C=M</code> for future reference.</p>
+<p>To search for a class:</p>
+<ul>
+<li>Select Term: <font style="color:red"><em>2020 Fall</em></font></li>
+<li>Type in a course code. For example, <font style="color:red"><em>MAT 191</em></font>.</li>
+<li>The <font style="color:red"><em>third column</em></font> is the section number. Be sure to read all rows with the same section number.</li>
+<li>Don’t forget to check the column <font style="color:red"><em># of Seats Available</em></font>.</li>
+<li>If there are multiple pages in the search result, navigate to other pages by clicking on the page numbers in the botton of the table.</li>
+</ul>
+<style>
+/* Set up container */
+#course-container { 
+    position: relative; 
+    width: 100%; 
+    padding-bottom: 50%; 
+    }
+
+/* Set up iframe */
+#course-frame {
+    width: 1240px;                  /* Desired height */
+    height: 1100px;                  /* Desired width */
+    border: 2px;                    /* Border thickness */
+    zoom: 0.9;                     /* Zoom factor obtained from trial-and-error*/
+    -moz-transform: scale(0.9)     /* Scale for Firefox*/
+    -moz-transform-origin: 0 0;     
+    -o-transform: scale(0.9);      /* Scale for Opera*/
+    -o-transform-origin: 0 0;       
+    -webkit-transform: scale(0.9); /* Scale for Chrom/Safari*/
+    -webkit-transform-origin: 0 0;  
+    }
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+ #course-frame  { zoom: 1;  }
+}
+</style>
+<div id="course-container">
+<p><iframe id="course-frame" src="https://adminapps.mercer.edu/classroomsched/default.aspx?C=M"> </iframe></p>
+</div>
 </div>
 <div id="catalog" class="section level3">
 <h3>Catalog</h3>
-<p>This is Mercer University catalog for the academic year 2019-2020. The catalog for the academic year 2020-2021 will be available in August, 2020. Typically, there are only minor changes from year to year. The catalog can pretty much answer <strong>ALL</strong> your questions regarding academics at Mercer.</p>
+<p>This is Mercer University catalog for the academic year 2019-2020. The catalog for the academic year 2020-2021 will be available in August, 2020 on the web page <code>https://registrar.mercer.edu/macon/catalogs.cfm</code>. The catalog can pretty much answer <strong>ALL</strong> your questions regarding academics at Mercer.</p>
+<ul>
+<li>Click on <strong>College of Liberal Arts</strong> on the left sidebar.</li>
+<li>Then move down 12 more rows on the sidebar to find <strong>ACADEMIC DEPARTMENTS</strong>.</li>
+<li>Finally, click on your major/minor department to see the requirements and course offerings.</li>
+</ul>
 <style>
 /* Set up container */
 #cat-container { 
@@ -404,10 +446,10 @@ summary {
 /* Set up iframe */
 #cat-frame {
     width: 1050px;                  /* Desired height */
-    height: 800px;                  /* Desired width */
+    height: 2200px;                  /* Desired width */
     border: 2px;                    /* Border thickness */
     zoom: 1.1;                     /* Zoom factor obtained from trial-and-error*/
-    -moz-transform: scale(1.1 /* Scale for Firefox*/
+    -moz-transform: scale(1.1) /* Scale for Firefox*/
     -moz-transform-origin: 0 0;     
     -o-transform: scale(1.1);      /* Scale for Opera*/
     -o-transform-origin: 0 0;       
