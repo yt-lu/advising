@@ -393,8 +393,37 @@ summary {
 <div id="catalog" class="section level3">
 <h3>Catalog</h3>
 <p>This is Mercer University catalog for the academic year 2019-2020. The catalog for the academic year 2020-2021 will be available in August, 2020. Typically, there are only minor changes from year to year. The catalog can pretty much answer <strong>ALL</strong> your questions regarding academics at Mercer.</p>
-<iframe src="http://documents.mercer.edu/catalogs/MaconCatalog19_20/" width="100%" height="600px">
-</iframe>
+<style>
+/* Set up container */
+#cat-container { 
+    position: relative; 
+    width: 100%; 
+    padding-bottom: 50%; 
+    }
+
+/* Set up iframe */
+#cat-frame {
+    width: 1050px;                  /* Desired height */
+    height: 800px;                  /* Desired width */
+    border: 2px;                    /* Border thickness */
+    zoom: 1.1;                     /* Zoom factor obtained from trial-and-error*/
+    -moz-transform: scale(1.1 /* Scale for Firefox*/
+    -moz-transform-origin: 0 0;     
+    -o-transform: scale(1.1);      /* Scale for Opera*/
+    -o-transform-origin: 0 0;       
+    -webkit-transform: scale(1.1); /* Scale for Chrom/Safari*/
+    -webkit-transform-origin: 0 0;  
+    }
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+ #cat-frame  { zoom: 1;  }
+}
+</style>
+<div id="cat-container">
+<p><iframe id="cat-frame" src="https://documents.mercer.edu/catalogs/MaconCatalog19_20"> </iframe></p>
+</div>
+<!-- <iframe src="http://documents.mercer.edu/catalogs/MaconCatalog19_20/" width="100%" height="1100px"> -->
+<!-- </iframe> -->
 </div>
 <div id="gened-checklist" class="section level3">
 <h3>GenEd Checklist</h3>
